@@ -28,7 +28,6 @@ public class V_morris_traversal {
                 {
                     prev = prev.right;
                 }
-
                 if(prev.right==null )
                 {
                     prev.right = cur ;
