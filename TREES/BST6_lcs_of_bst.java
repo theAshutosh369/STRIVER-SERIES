@@ -5,7 +5,8 @@ public class BST6_lcs_of_bst
     static class Node {
         int data;
         Node left, right;
-        Node ( int data ) {
+        Node ( int data )
+        {
             this.data = data;
             left = right = null;
         }
@@ -21,6 +22,7 @@ public class BST6_lcs_of_bst
 
         return root ;
     }
+
     public static void main ( String[] args )
     {
         Node root = new Node(4);
