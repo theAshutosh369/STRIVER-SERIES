@@ -18,12 +18,15 @@ public class DP6_house_robber {
     {
         int a1[] = new int[n-1];
         int a2[] = new int[n-1];
-        for (int i = 0; i < n; i++) {
+
+        for (int i = 0; i < n; i++)
+        {
             if( i!=0 ) a1[i-1] = arr[i];
             if( i!=n-1) a2[i] = arr[i];
         }
 
         int[] dp = new int[n];
+
         Arrays.fill( dp , -1 );
         long one = f(a1.length-1 , a1 , dp );
 
