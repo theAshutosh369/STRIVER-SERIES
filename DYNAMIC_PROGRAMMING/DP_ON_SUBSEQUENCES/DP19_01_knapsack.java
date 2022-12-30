@@ -8,7 +8,7 @@ public class DP19_01_knapsack {
     {
         // base case
         if( i==0 ) {
-            if(w[i]<=K ) return dp[i][K] = p[i] ;
+            if( K>=w[i] ) return dp[i][K] = p[i] ;
             else return 0;
         }
 

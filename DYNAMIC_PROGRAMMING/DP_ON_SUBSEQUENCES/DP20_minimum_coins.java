@@ -38,7 +38,11 @@ public class DP20_minimum_coins {
         {
             Arrays.fill( i , -1 );
         }
-        System.out.println( minimumCoins(  n-1 , k , dp , arr) );
+
+        int anss =  minimumCoins( n-1 , k , dp ,arr );
+
+        if( anss==1000000000 ) System.out.println( -1 );
+        else System.out.println( anss );
 
     }
 }
