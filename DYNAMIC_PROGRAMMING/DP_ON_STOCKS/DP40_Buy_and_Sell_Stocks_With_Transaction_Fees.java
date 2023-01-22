@@ -25,7 +25,8 @@ public class DP40_Buy_and_Sell_Stocks_With_Transaction_Fees {
 
         return dp[i][buy] = profit ;
     }
-    public static void main ( String[] args ) {
+    public static void main ( String[] args )
+    {
 
         int arr[] = {1,3,2,8,4,9};
         int fee = 2;
@@ -33,7 +34,7 @@ public class DP40_Buy_and_Sell_Stocks_With_Transaction_Fees {
         int dp[][] = new int[n][2] ;
         for( int[] i : dp )
         {
-            Arrays.fill( i , -1 );
+            Arrays.fill( i ,-1 );
         }
 
         System.out.println(  ans( 0 , 0 , fee , n ,  arr , dp)  );
