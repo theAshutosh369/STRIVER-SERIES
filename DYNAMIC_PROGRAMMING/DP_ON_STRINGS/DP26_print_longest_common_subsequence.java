@@ -2,7 +2,7 @@ package STRIVER_SERIES.DYNAMIC_PROGRAMMING.DP_ON_STRINGS;
 
 import java.util.Arrays;
 
-public class DP26_print_lcs {
+public class DP26_print_longest_common_subsequence {
 
     static int lcs( String s1 , String s2 , int n , int m , int[][] dp )
     {
@@ -19,6 +19,7 @@ public class DP26_print_lcs {
         }
 
     }
+
 
     public static void main ( String[] args ) {
 
