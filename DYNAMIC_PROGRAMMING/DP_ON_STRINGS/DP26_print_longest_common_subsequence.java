@@ -41,7 +41,7 @@ public class DP26_print_longest_common_subsequence {
 
         // printing logic
         int i =0 ;
-        Character[] ch = new Character[ans];
+        char[] ch = new char[ans];
         while (n>0 && m>0)
         {
             if( s1.charAt(n-1)==s2.charAt(m-1))
@@ -57,6 +57,7 @@ public class DP26_print_longest_common_subsequence {
             else m--;
         }
 
+        // reverse the string
         String answer = "";
 
         for(  int j = ans-1; j >=0  ; j--  ) {
