@@ -1,13 +1,13 @@
 package STRIVER_SERIES.DYNAMIC_PROGRAMMING.DP_2D;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class DP7_ninja_training
 {
     static int f( int day , int last , int arr[][] , int dp[][])
     {
-        if( day==0 ){
+        if( day==0 )
+        {
             int maxi = 0;
             for (int task = 0; task < 3; task++) {
                 if( task!=last )
@@ -62,12 +62,15 @@ public class DP7_ninja_training
 
         System.out.println( dp[n - 1][3] );
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < 4; j++) {
-                System.out.print( dp[i][j] + " ");
-            }
-            System.out.println();
-        }
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j < 4; j++) {
+//                System.out.print( dp[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+//
+
+
     }
 
 
@@ -103,6 +106,9 @@ public class DP7_ninja_training
         // time complexity  : O( n*4*3 );
     }
 
+
+
+
     public static void main ( String[] args ) {
 
         int arr[][] = {{10,40,70},
@@ -129,6 +135,5 @@ public class DP7_ninja_training
 
     }
 }
-
 
 // three solutions are there

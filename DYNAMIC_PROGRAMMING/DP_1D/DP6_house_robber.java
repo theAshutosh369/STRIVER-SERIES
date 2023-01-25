@@ -1,14 +1,18 @@
-package STRIVER_SERIES.DYNAMIC_PROGRAMMING;
+package STRIVER_SERIES.DYNAMIC_PROGRAMMING.DP_1D;
 
 import java.util.Arrays;
 
 public class DP6_house_robber {
     static int f( int i , int arr[] , int dp[] )
     {
+        // base case
         if( i == 0 )    return arr[0];
         if( i<0 )       return 0;
+
+        // memoization
         if( dp[i]!=-1 ) return dp[i];
 
+        // concept
         int pick      = arr[i] + f( i-2 , arr , dp );
         int not_pick  =          f( i-1 , arr , dp );
 
@@ -28,12 +32,13 @@ public class DP6_house_robber {
         int[] dp = new int[n];
 
         Arrays.fill( dp , -1 );
-        long one = f(a1.length-1 , a1 , dp );
+        long leaveFirstElement = f(a1.length-1 , a1 , dp );
 
         Arrays.fill( dp , -1 );
-        long two = f(a2.length-1 , a2 , dp );
+        long leaveLastElement = f(a2.length-1 , a2 , dp );
 
-        System.out.println( Math.max(  one ,two ));
+        // return max of the 2 cases
+        System.out.println( Math.max(  leaveFirstElement , leaveLastElement ));
     }
     public static void main ( String[] args )
     {

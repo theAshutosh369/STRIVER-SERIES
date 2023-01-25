@@ -1,4 +1,4 @@
-package STRIVER_SERIES.DYNAMIC_PROGRAMMING;
+package STRIVER_SERIES.DYNAMIC_PROGRAMMING.DP_1D;
 
 import java.util.Arrays;
 
