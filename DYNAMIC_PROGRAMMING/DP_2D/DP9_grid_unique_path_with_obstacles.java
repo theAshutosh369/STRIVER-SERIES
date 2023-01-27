@@ -44,10 +44,12 @@ public class DP9_grid_unique_path_with_obstacles {
         return dp[m-1][n-1];
     }
 
+
     public static void main ( String[] args )
     {
-        int[][] arr = {{0,-1},
-                       {0, 0}};
+        int[][] arr = {{0,0,0},
+                {0,-1,0},
+                {0,0,0}};
 
         int m = arr.length;
         int n = arr[0].length;
@@ -61,5 +63,6 @@ public class DP9_grid_unique_path_with_obstacles {
 
         System.out.println( paths( m-1 ,n-1 , dp , arr ));
         System.out.println( tabulation( m , n , dp , arr ));
+
     }
 }

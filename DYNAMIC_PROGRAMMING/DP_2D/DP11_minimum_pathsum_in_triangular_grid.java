@@ -16,6 +16,8 @@ public class DP11_minimum_pathsum_in_triangular_grid
 
         return dp[i][j] = Math.min( down , down_right );
     }
+
+
     public static void main ( String[] args )
     {
         int arr[][] = {{1},

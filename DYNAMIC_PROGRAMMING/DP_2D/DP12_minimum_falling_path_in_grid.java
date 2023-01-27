@@ -53,7 +53,7 @@ public class DP12_minimum_falling_path_in_grid {
         int Max = Integer.MIN_VALUE ;
         int Min = Integer.MAX_VALUE ;
         for (int i = 0; i < m; i++) {
-//            Max  = Math.max( Max , maxpath( n-1 , i , m , dp ,arr ));
+            Max  = Math.max( Max , maxpath( n-1 , i , m , dp ,arr ));
             Min  = Math.min( Min , minpath( n-1 , i , m , dp ,arr ));
         }
         

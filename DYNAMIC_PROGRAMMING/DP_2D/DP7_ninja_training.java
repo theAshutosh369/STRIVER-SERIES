@@ -12,7 +12,7 @@ public class DP7_ninja_training
             for (int task = 0; task < 3; task++) {
                 if( task!=last )
                 {
-                   maxi = Math.max( maxi , arr[day][last]) ;
+                   maxi = Math.max( maxi , arr[day][task]) ;
                 }
             }
             return dp[day][last] = maxi;
