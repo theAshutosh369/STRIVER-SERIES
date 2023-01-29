@@ -29,7 +29,7 @@ public class DP39_buy_and_sell_stocks_with_cooldown {
 
     public static void main ( String[] args ) {
 
-        int arr[] = { 1,2,3,0,2 };
+        int arr[] = { 4,9,0,4,10 };
         int n = arr.length;
         int dp[][] = new int[n][2] ;
         for( int[] i : dp )
