@@ -35,6 +35,9 @@ public class G21_topological_sorting {
         adj.get(5).add(0);
         adj.get(5).add(2);
 
+
+        //--------------------------------------------
+
         int vis[] = new int[V];
         Stack<Integer> st = new Stack<>();
         for( int i = 0 ; i<V ; i++ )
