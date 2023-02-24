@@ -57,6 +57,7 @@ public class G37_Path_with_minimum_effort {
                         q.add( new pair( ni ,nj , neweffort ));
                     }
                 }
+
             }
         }
         System.out.println( 0 );
