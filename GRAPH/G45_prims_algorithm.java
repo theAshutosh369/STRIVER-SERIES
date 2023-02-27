@@ -2,7 +2,6 @@ package STRIVER_SERIES.GRAPH;
 
 import java.util.ArrayList;
 import java.util.PriorityQueue;
-import java.util.Stack;
 
 public class G45_prims_algorithm {
 
@@ -57,7 +56,7 @@ public class G45_prims_algorithm {
 
         }
 
-        System.out.println( mst );
+        System.out.println( "Minimum spanning tree : " +  mst );
 
     }
 }
